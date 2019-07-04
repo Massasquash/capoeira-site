@@ -1,0 +1,290 @@
+/* ↓ 初期設定*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top: 1px solid black;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+
+
+
+/*全体設定*/
+body {
+	font-size: 1.0rem;
+	font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	background-color: black
+}
+
+.wrapper{
+	width: 960px;
+	margin: 20px auto;
+	padding: 20px;
+	background-color: white;
+}
+
+.clearfix::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.hidden{
+	display: none;
+}
+
+.heading{
+    line-height: 3.0rem;
+}
+.title{
+    line-height: 2.0rem;
+    margin: 5px 5px 5px 0;
+}
+.subheading{
+    line-height: 2.0rem;
+}
+
+
+/*ヘッダー*/
+.header{
+	width: 100%;
+	height: 100px;
+}
+.h-logo{
+	height: 80%;
+	float: left;
+}
+.h-description{
+	text-align-last: right;
+	line-height: 1.5rem
+}
+
+.global-navi{
+	width: 940px;
+	margin: 15px 0 3px;
+	text-align: center;
+	width: 960px;
+	height: 35px;
+	background-color: #324850;
+}
+.global-navi li{
+	list-style-type: none;
+	display: inline;
+	padding:0 30px;
+}
+
+.global-navi a{
+	font-color: white;
+	font-size: 15px;
+	text-decoration: none; 
+}
+.global-navi a:link {
+	color:white;
+}
+.global-navi a:visited {
+	color:white;
+}
+.global-navi a:hover {
+	color:#80FF00;
+}
+.global-navi a:active {
+	color:#0000Ff;
+}
+
+
+
+
+/*フッター*/
+.footer h2{
+	font-size:12px;
+}
+
+.footer{
+	height: 130px;
+	width: 940px;
+	background-color: #324850;
+}
+.f-description{
+	width: 400px;
+	padding: 10px;
+	color: white;
+	float: left;
+	line-height: 1.5rem
+}
+
+.f-facebook{
+	width: 500px;
+	float:right;
+}
+
+.f-member{
+    float: left;
+}
+
+/*メイン部分・サイドメニュー部分*/
+.main{
+    width: 660px;
+    float: left;
+    margin: 20px 5px 20px 5px;
+}
+.sidemenu{
+    width: 280px;
+    float: right;
+    margin-top: 20px;
+}
+
+/*index.html*/
+.section{
+    width: 200px;
+    float: left;
+    padding: 10px;
+}
+.section h3, .snsicon{
+    text-align: center;
+    line-height: 2.0rem;
+}
+.section p{
+    line-height: 1.3rem;
+}
+.snsicon{
+    text-align: center;
+}
+
+
+/*about.html*/
+/*group.html*/
+
+.c-image{
+    float: left;
+    padding: 0 10px;
+}
+.c-description{
+    padding: 10px;
+    line-height: 1.2rem;
+}
+
+
+/*sapporo.html*/
+/*obihiro.html*/
+
+.li-image{
+    float: left;
+    padding: 0 10px;
+}
+.li-description{
+    display: block;
+    padding: 10px;
+    line-height: 1.2rem;
+}
+.ld-description{
+    line-height: 1.2rem;
+    margin: 0 10px 10px 10px;
+}
+.ld-class-description{
+    line-height: 1.5rem;
+    margin: 10px 0;
+    text-align: center;
+}
+.ld-class-wrapper h3{
+    text-align: center;
+    margin-top: 20px;
+}
+.ld-class-map{
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+.ld-class-wrapper{
+    border: 2px inset;
+}
+
+
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */

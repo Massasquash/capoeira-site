@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Capoeira Angola Center Hokkaido</title>
+	<%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+	<link rel="stylesheet" href="style.css">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+
+
+
+<body>
+	<div class="wrapper">
+
+		<div class="header clearfix">
+			<%= image_tag "logo.jpg", class: "h-logo" %>
+			<div class="h-description">
+				<h3>Capoeira Angola Center Hokkaido</h3>
+				<p>is supervised <b><i>Contramestre Denis</i></b></p>
+				<p>Especially thanks for  <b><i>MESTRE JOAO GRANDE!!</i></b></p>
+			</div>
+		</div>
+		<ul class="global-navi">
+			<li><%= link_to "TOP", home_index_path %></li>
+			<li><%= link_to "Capoeira Angola", home_about_path %></li>
+			<li><%= link_to "グループについて", home_group_path  %></li>
+			<li><%= link_to "札幌クラス", home_sapporo_path %></li>
+			<li><%= link_to "帯広クラス", home_obihiro_path %></li>
+			<li><%#= link_to "MEMBER", articles_path %></li>
+		</ul>
+
+	  	<div class="content clearfix">
+	  	  <%= yield %>
+	 	</div>
+    
+	    <div class="footer clearfix">
+			<div class="f-description">
+				<h3>Capoeira Angola Center Hokkaido</h3>
+				<p>カポエイラ・アンゴラ・センター・北海道</p>
+			</div>
+
+				
+
+			<div class="f-facebook">
+				  <!--<div class="fb-page" data-href="https://www.facebook.com/Capoeiraangolasapporo/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/Capoeiraangolasapporo/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Capoeiraangolasapporo/">Capoeira Angola Center Hokkaido -Sapporo -study group</a></blockquote></div>-->
+			</div>
+		</div>
+	 
+	 </div>
+    
+  </body>
+</html>
