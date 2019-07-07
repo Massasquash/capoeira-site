@@ -268,9 +268,42 @@ body {
 
 
 .ld-class-wrapper{
-    border: 2px inset;
+    border: 1px inset;
 }
 
+/*menues/index*/
+.menu{
+    margin: 20px 0;
+    padding: 10px;
+    border: 3px outset #666666;
+}
+.menu-remark{
+    line-height: 2.0rem;
+}
+.menu-contents{
+    width: 350px;
+    margin: 10px;
+    float: left;
+}
+.menu-image{
+    padding-top: 20px;
+    width: 100px;
+    float: left;
+}
+
+.comment-form{
+    clear: both;
+    margin: 40px 0;
+}
+.field-wrapper{
+    width: 800px;
+}
+.field-moviment, .field-music{
+    float: left;
+}
+.field-image{
+    clear: both;
+}
 
 
 /*

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+  <div class="menu clearfix">
+    
+    <h3 class="menu-remark"><%= link_to @menu.remark, @menu %>（<%= @menu.date %>）</h3>
+    <div>
+      <%= link_to '編集', edit_menu_path(@menu) %>
+      <%= link_to '削除', @menu, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </div>
+    
+    <div class="menu-contents">
+      <h3>Movement</h3>
+      <p>　<%= simple_format(@menu.movement) %></p>
+    </div>
+    <div class="menu-contents">
+      <h3>Music</h3>
+      <p>　<%=simple_format(@menu.music) %></p>
+    </div>   
+    <div class="menu-image">
+      <p>　<%= @menu.image %></p>
+    </div>
+  </div>
+
+  <div class="comments">
+    <%= render @menu.comments %>
+    <%#= link_to "編集" [:edit, @comment.menu, @comment] %>
+    <%#= link_to "削除" [@comment.menu, @comment], method: :delete, data: {confirm: "Are you sure?"} %>  
+  </div>
+
+  <div class="comment-form">
+    <%= render 'comments/form' %>
+  </div>
+
+
+
+
+
+
+<%= link_to '戻る', menus_path %>

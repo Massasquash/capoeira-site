@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2019-07-04
+  remark: MyString
+  movement: MyText
+  music: MyText
+  image: MyString
+
+two:
+  date: 2019-07-04
+  remark: MyString
+  movement: MyText
+  music: MyText
+  image: MyString
