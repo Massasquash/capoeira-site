@@ -2,37 +2,33 @@
 
 <h1 class="heading">My 練習メニュー</h2>
 
-<h2 class="title"><%= link_to 'メニューを記録する', new_menu_path %></h2>
-
+<div class="clearfix">
+  <h2 class="title"><%= link_to 'メニューを記録する', new_menu_path %></h2>
+  <div class="sort-menu">
+    <p>Serch</p>
+      <%= form_tag(menus_path, method: :get) do %>
+      <%= text_field_tag :search %>
+      <%= submit_tag 'Search', :remark => nil %>
+    <% end %>
+  </div>
+</div>
 
 
 <div class="menues">
-  <% @menus.each do |menu| %>
-  <div class="menu clearfix">
-    
-    <h3 class="menu-remark"><%= link_to menu.remark, menu %>（<%= menu.date %>）</h3>
-    <div>
-      <%= link_to '編集', edit_menu_path(menu) %>
-      <%= link_to '削除', menu, method: :delete, data: { confirm: 'Are you sure?' } %>
-    </div>
-    
-    <div class="menu-contents">
-      <h3>Movement</h3>
-      <p>　<%= simple_format(menu.movement) %></p>
-    </div>
-    <div class="menu-contents">
-      <h3>Music</h3>
-      <p>　<%= simple_format(menu.music) %></p>
-    </div>   
-    <div class="menu-image">
-      <p>　<%= menu.image %></p>
-    </div>       
-    
-  
-
+  <div>
+    <p>Serch：<%= params[:search] %></p>
   </div>
-  <% end %>
 
+  <% if @menus.empty? %>
+    <div class="serch-comment">
+      <h3>検索結果がありません！</h3>
+    </div>
+  <% else %>
+    <div class="serch-comment">
+      <h3><%= @menus.count %>件のメニュー</h3>
+    </div>
+    <%= render @menus %>
+  <% end %>
 </div>
 
 

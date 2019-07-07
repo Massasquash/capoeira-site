@@ -4,7 +4,8 @@ class MenusController < ApplicationController
   # GET /menus
   # GET /menus.json
   def index
-    @menus = Menu.all
+    # @menus = Menu.serch
+    @menus =  Menu.search(params[:search])
   end
 
   # GET /menus/1
@@ -60,6 +61,13 @@ class MenusController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  # def search
+  #   #Viewのformで取得したパラメータをモデルに渡す
+  #   @menus = Menu.search(params[:search])
+  #   # raise.params.inspect
+  # end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
