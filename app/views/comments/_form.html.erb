@@ -1,0 +1,6 @@
+<%= form_for [@menu, @menu.comments.build] do |f| %>
+  <p>コメントを入力</p>
+  <%= f.text_field :body %>
+  <%= f.submit %>
+<% end %>
+  

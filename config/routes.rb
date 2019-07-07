@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :menus do
+    resources :comments
+  end
   get 'home/index'
   get 'home/about'
   get 'home/group'
